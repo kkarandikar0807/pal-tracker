@@ -23,7 +23,7 @@ public class TimeEntryController {
 
     @PostMapping
     public ResponseEntity<TimeEntry> create(@RequestBody TimeEntry timeEntry) {
-        timeEntry = new TimeEntry(1, 123L, 456L, LocalDate.parse("2017-01-08"), 8);
+        // timeEntry = new TimeEntry(1, 123L, 456L, LocalDate.parse("2017-01-08"), 8);
         TimeEntry createdTimeEntry = timeEntriesRepo.create(timeEntry);
       
 
