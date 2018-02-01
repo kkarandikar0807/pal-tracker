@@ -35,4 +35,8 @@ public class WelcomeApiTest {
         String body = this.restTemplate.getForObject("/", String.class);
         assertThat(body).isEqualTo("Hello from test");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964

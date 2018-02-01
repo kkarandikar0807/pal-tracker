@@ -2,6 +2,7 @@ package test.pivotal.pal.trackerapi;
 
 import com.jayway.jsonpath.DocumentContext;
 import io.pivotal.pal.tracker.PalTrackerApplication;
+<<<<<<< HEAD
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +10,13 @@ import org.springframework.boot.context.embedded.LocalServerPort;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+=======
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+>>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -21,6 +29,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @SpringBootTest(classes = PalTrackerApplication.class, webEnvironment = RANDOM_PORT)
 public class HealthApiTest {
 
+<<<<<<< HEAD
     @LocalServerPort
     private String port;
     private TestRestTemplate restTemplate;
@@ -34,6 +43,11 @@ public class HealthApiTest {
         restTemplate = new TestRestTemplate(builder);
     }
 
+=======
+    @Autowired
+    private TestRestTemplate restTemplate;
+
+>>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964
     @Test
     public void healthTest() {
         ResponseEntity<String> response = this.restTemplate.getForEntity("/health", String.class);
