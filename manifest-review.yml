@@ -2,16 +2,8 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-<<<<<<< HEAD
   host: ps-pal-tracker-review
   services:
   - tracker-database
   env:
     SECURITY_FORCE_HTTPS: true
-=======
-  host: ps-pal-tracker-kaushikk-review
-  services:
-  - tracker-database
-  env:
-    SECURITY_FORCE_HTTPS: true
->>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964

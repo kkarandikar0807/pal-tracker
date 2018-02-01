@@ -85,8 +85,4 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
 
     private final ResultSetExtractor<TimeEntry> extractor =
         (rs) -> rs.next() ? mapper.mapRow(rs, 1) : null;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964

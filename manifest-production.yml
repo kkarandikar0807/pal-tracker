@@ -2,11 +2,7 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-<<<<<<< HEAD
   host: ps-pal-tracker
-=======
-  host: ps-pal-tracker-kaushikk-production
->>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964
   services:
   - tracker-database
   env:

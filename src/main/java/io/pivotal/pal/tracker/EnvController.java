@@ -1,26 +1,13 @@
 package io.pivotal.pal.tracker;
 
-<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-=======
->>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964
 
 import java.util.HashMap;
 import java.util.Map;
 
-<<<<<<< HEAD
 @RestController
-=======
-import org.springframework.beans.factory.annotation.Value;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-
->>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964
 public class EnvController {
 
     private final String port;
@@ -41,10 +28,6 @@ public class EnvController {
     }
 
     @GetMapping("/env")
-<<<<<<< HEAD
-=======
-    
->>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964
     public Map<String, String> getEnv() {
         Map<String, String> env = new HashMap<>();
 

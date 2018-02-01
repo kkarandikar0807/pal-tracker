@@ -32,8 +32,4 @@ run:
     ./gradlew -P version=$(cat ../version/number) testMigrate clean build || (service mysql stop && exit 1)
     service mysql stop
 
-<<<<<<< HEAD
     cp build/libs/pal-tracker-*.jar ../build-output
-=======
-    cp build/libs/pal-tracker-*.jar ../build-output
->>>>>>> 36a1e68ddc0a7612a7cd2fafb42c6bd9fee91964
